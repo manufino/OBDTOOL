@@ -194,9 +194,6 @@ Connection ~ 3550 1800
 Wire Wire Line
 	2600 1800 1800 1800
 Wire Wire Line
-	1950 1900 1950 1800
-Connection ~ 1950 1800
-Wire Wire Line
 	2450 1900 2450 1800
 Connection ~ 2450 1800
 Wire Wire Line
@@ -221,4 +218,9 @@ Text GLabel 1300 1600 1    60   Input ~ 0
 VBAT
 Wire Wire Line
 	1300 1600 1300 2050
+Text GLabel 1950 1600 1    60   Output ~ 0
+VBAT_STAB
+Wire Wire Line
+	1950 1600 1950 1900
+Connection ~ 1950 1800
 $EndSCHEMATC

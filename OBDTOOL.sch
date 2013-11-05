@@ -612,8 +612,8 @@ $EndSheet
 $Sheet
 S 1550 7150 1000 150 
 U 52771D98
-F0 "MicroController" 50
-F1 "MicroController.sch" 50
+F0 "USB_UART" 50
+F1 "USB_UART.sch" 50
 $EndSheet
 $Comp
 L OPEN_HARDWARE_2 LOGO1
