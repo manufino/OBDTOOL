@@ -72,14 +72,13 @@ LIBS:lm339
 LIBS:elm
 LIBS:transistors_gaui
 LIBS:ipc-7351-transistor
-LIBS:OBDTOOL-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 7
 Title ""
-Date "4 nov 2013"
+Date "5 nov 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -224,4 +223,15 @@ Wire Wire Line
 	3000 2900 3450 2900
 Text GLabel 3000 2900 0    60   Input ~ 0
 PWM/VPW
+$Comp
+L OPEN_HARDWARE_2 LOGO?
+U 1 1 527904FF
+P 10650 6600
+F 0 "LOGO?" H 10650 7100 60  0001 C CNN
+F 1 "OPEN HARDWARE" H 10650 6150 60  0000 C CNN
+F 2 "" H 10650 6600 60  0000 C CNN
+F 3 "" H 10650 6600 60  0000 C CNN
+	1    10650 6600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
