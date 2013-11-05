@@ -133,9 +133,9 @@ Wire Wire Line
 Wire Wire Line
 	4250 3000 4250 3100
 Text GLabel 4200 2800 0    39   BiDi ~ 0
-J1850_BUS+_TX
+J1850_BUS+
 Text GLabel 4200 2900 0    39   BiDi ~ 0
-J1850_BUS-_TX
+J1850_BUS-
 Wire Wire Line
 	4350 2800 4200 2800
 Wire Wire Line
