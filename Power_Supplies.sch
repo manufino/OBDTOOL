@@ -79,7 +79,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
 Title ""
-Date "5 nov 2013"
+Date "6 nov 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -165,10 +165,10 @@ F 3 "~" H 1300 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR036
 U 1 1 5279474D
 P 2450 2500
-F 0 "#PWR?" H 2450 2500 30  0001 C CNN
+F 0 "#PWR036" H 2450 2500 30  0001 C CNN
 F 1 "GND" H 2450 2430 30  0001 C CNN
 F 2 "" H 2450 2500 60  0000 C CNN
 F 3 "" H 2450 2500 60  0000 C CNN
@@ -176,32 +176,29 @@ F 3 "" H 2450 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR?
+L +5V #PWR037
 U 1 1 5279475C
 P 3550 1650
-F 0 "#PWR?" H 3550 1740 20  0001 C CNN
+F 0 "#PWR037" H 3550 1740 20  0001 C CNN
 F 1 "+5V" H 3550 1740 30  0000 C CNN
 F 2 "" H 3550 1650 60  0000 C CNN
 F 3 "" H 3550 1650 60  0000 C CNN
 	1    3550 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 1800 3550 1800
+Text GLabel 1300 1600 1    60   Input ~ 0
+VBAT
+Text GLabel 1950 1600 1    60   Output ~ 0
+VBAT_STAB
 Wire Wire Line
 	3550 1650 3550 1900
 Connection ~ 3550 1800
 Wire Wire Line
 	2600 1800 1800 1800
 Wire Wire Line
-	2450 1900 2450 1800
-Connection ~ 2450 1800
-Wire Wire Line
 	1400 1800 1300 1800
 Wire Wire Line
 	1300 2250 1300 2400
-Wire Wire Line
-	1300 2400 3550 2400
 Wire Wire Line
 	3550 2400 3550 2300
 Wire Wire Line
@@ -211,16 +208,49 @@ Wire Wire Line
 	2450 2300 2450 2500
 Connection ~ 2450 2400
 Wire Wire Line
-	3000 2100 3000 2400
+	3000 2400 3000 2100
 Connection ~ 3000 2400
 Connection ~ 1300 1800
-Text GLabel 1300 1600 1    60   Input ~ 0
-VBAT
 Wire Wire Line
 	1300 1600 1300 2050
-Text GLabel 1950 1600 1    60   Output ~ 0
-VBAT_STAB
 Wire Wire Line
 	1950 1600 1950 1900
 Connection ~ 1950 1800
+Wire Wire Line
+	1300 2400 3850 2400
+Wire Wire Line
+	3850 2400 3850 2350
+Connection ~ 3550 2400
+$Comp
+L PWR_FLAG #FLG038
+U 1 1 527988E8
+P 2150 1600
+F 0 "#FLG038" H 2150 1695 30  0001 C CNN
+F 1 "PWR_FLAG" H 2150 1780 30  0000 C CNN
+F 2 "" H 2150 1600 60  0000 C CNN
+F 3 "" H 2150 1600 60  0000 C CNN
+	1    2150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1800 3550 1800
+$Comp
+L PWR_FLAG #FLG039
+U 1 1 52798EF0
+P 3850 2350
+F 0 "#FLG039" H 3850 2445 30  0001 C CNN
+F 1 "PWR_FLAG" H 3850 2530 30  0000 C CNN
+F 2 "" H 3850 2350 60  0000 C CNN
+F 3 "" H 3850 2350 60  0000 C CNN
+	1    3850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1900 2450 1800
+Connection ~ 2450 1800
+Wire Wire Line
+	2150 1600 2150 1700
+Wire Wire Line
+	2150 1700 1950 1700
+Connection ~ 1950 1700
 $EndSCHEMATC
