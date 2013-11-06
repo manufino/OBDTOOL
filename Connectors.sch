@@ -110,7 +110,7 @@ F 3 "" H 4250 3100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4200 2300 0    39   Output ~ 0
-VBAT
+VBAT_RAW
 Text GLabel 4200 2400 0    39   BiDi ~ 0
 CAN_HI
 Text GLabel 4200 2500 0    39   BiDi ~ 0

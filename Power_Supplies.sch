@@ -187,9 +187,9 @@ F 3 "" H 3550 1650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1300 1600 1    60   Input ~ 0
-VBAT
+VBAT_RAW
 Text GLabel 1950 1600 1    60   Output ~ 0
-VBAT_STAB
+VBAT
 Wire Wire Line
 	3550 1650 3550 1900
 Connection ~ 3550 1800

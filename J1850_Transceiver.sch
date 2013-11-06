@@ -670,11 +670,11 @@ Wire Wire Line
 Wire Wire Line
 	7600 5550 7700 5550
 Text GLabel 7950 3650 1    60   Input ~ 0
-VBAT_STAB
+VBAT
 Wire Wire Line
 	7950 3700 7950 3650
 Text GLabel 7950 5300 1    60   Input ~ 0
-VBAT_STAB
+VBAT
 Wire Wire Line
 	7950 5350 7950 5300
 $EndSCHEMATC

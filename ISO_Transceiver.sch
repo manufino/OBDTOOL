@@ -348,7 +348,7 @@ F 3 "" H 10650 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8850 3400 1    60   Input ~ 0
-VBAT_STAB
+VBAT
 Wire Wire Line
 	8850 3400 8850 3450
 $EndSCHEMATC
