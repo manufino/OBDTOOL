@@ -72,6 +72,8 @@ LIBS:lm339
 LIBS:elm
 LIBS:transistors_gaui
 LIBS:ipc-7351-transistor
+LIBS:ftdichip
+LIBS:mm232r
 LIBS:OBDTOOL-cache
 EELAYER 27 0
 EELAYER END

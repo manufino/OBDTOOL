@@ -1,4 +1,4 @@
-update=04/11/2013 05:25:40
+update=06/11/2013 01:41:53
 version=1
 last_client=eeschema
 [cvpcb]
@@ -47,7 +47,7 @@ LibName16=valves
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../Program Files (x86)/KiCad/share/library/mylib
 NetFmtName=
 RptD_X=0
 RptD_Y=100
@@ -127,3 +127,5 @@ LibName70=lm339
 LibName71=elm
 LibName72=transistors_gaui
 LibName73=ipc-7351-transistor
+LibName74=mylib/ftdichip
+LibName75=mylib/mm232r
