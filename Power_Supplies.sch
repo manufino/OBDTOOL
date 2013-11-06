@@ -194,37 +194,6 @@ Text GLabel 2900 3650 1    60   Input ~ 0
 VBAT_RAW
 Text GLabel 3550 3650 1    60   Output ~ 0
 VBAT
-Wire Wire Line
-	5150 3700 5150 3950
-Connection ~ 5150 3850
-Wire Wire Line
-	4200 3850 3400 3850
-Wire Wire Line
-	3000 3850 2900 3850
-Wire Wire Line
-	2900 4300 2900 4450
-Wire Wire Line
-	5150 4450 5150 4350
-Wire Wire Line
-	3550 4350 3550 4450
-Connection ~ 3550 4450
-Wire Wire Line
-	4050 4350 4050 4550
-Connection ~ 4050 4450
-Wire Wire Line
-	4600 4450 4600 4150
-Connection ~ 4600 4450
-Connection ~ 2900 3850
-Wire Wire Line
-	2900 3650 2900 4100
-Wire Wire Line
-	3550 3650 3550 3950
-Connection ~ 3550 3850
-Wire Wire Line
-	2900 4450 5450 4450
-Wire Wire Line
-	5450 4450 5450 4400
-Connection ~ 5150 4450
 $Comp
 L PWR_FLAG #FLG037
 U 1 1 527988E8
@@ -236,8 +205,6 @@ F 3 "" H 3750 3650 60  0000 C CNN
 	1    3750 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 3850 5150 3850
 $Comp
 L PWR_FLAG #FLG038
 U 1 1 52798EF0
@@ -249,14 +216,6 @@ F 3 "" H 5450 4400 60  0000 C CNN
 	1    5450 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 3950 4050 3850
-Connection ~ 4050 3850
-Wire Wire Line
-	3750 3650 3750 3750
-Wire Wire Line
-	3750 3750 3550 3750
-Connection ~ 3550 3750
 $Comp
 L NCP699 U7
 U 1 1 527999D0
@@ -290,17 +249,6 @@ F 3 "" H 6650 4350 60  0000 C CNN
 	1    6650 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6650 3800 7050 3800
-Wire Wire Line
-	7050 4200 6650 4200
-Wire Wire Line
-	7050 4000 6950 4000
-Wire Wire Line
-	6950 4000 6950 3800
-Connection ~ 6950 3800
-Wire Wire Line
-	6650 4200 6650 4350
 $Comp
 L C C15
 U 1 1 52799AA3
@@ -312,10 +260,6 @@ F 3 "~" H 8000 4050 60  0000 C CNN
 	1    8000 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7750 3800 8000 3800
-Wire Wire Line
-	8000 3650 8000 3850
 $Comp
 L GND #PWR040
 U 1 1 52799AC9
@@ -327,8 +271,6 @@ F 3 "" H 8000 4350 60  0000 C CNN
 	1    8000 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8000 4250 8000 4350
 $Comp
 L +3.3V #PWR041
 U 1 1 52799AF3
@@ -340,7 +282,6 @@ F 3 "" H 8000 3650 60  0000 C CNN
 	1    8000 3650
 	1    0    0    -1  
 $EndComp
-Connection ~ 8000 3800
 $Comp
 L +5V #PWR042
 U 1 1 52799B2D
@@ -352,7 +293,116 @@ F 3 "" H 6800 3650 60  0000 C CNN
 	1    6800 3650
 	1    0    0    -1  
 $EndComp
+$Comp
+L +3.3V #PWR043
+U 1 1 5279A345
+P 8950 3250
+F 0 "#PWR043" H 8950 3210 30  0001 C CNN
+F 1 "+3.3V" H 8950 3360 30  0000 C CNN
+F 2 "" H 8950 3250 60  0000 C CNN
+F 3 "" H 8950 3250 60  0000 C CNN
+	1    8950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED LED_PWR1
+U 1 1 5279A34D
+P 8950 4050
+F 0 "LED_PWR1" H 8950 4150 50  0001 C CNN
+F 1 "LED_PWR" V 8950 4300 50  0000 C CNN
+F 2 "~" H 8950 4050 60  0000 C CNN
+F 3 "~" H 8950 4050 60  0000 C CNN
+	1    8950 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR044
+U 1 1 5279A35A
+P 8950 4350
+F 0 "#PWR044" H 8950 4350 30  0001 C CNN
+F 1 "GND" H 8950 4280 30  0001 C CNN
+F 2 "" H 8950 4350 60  0000 C CNN
+F 3 "" H 8950 4350 60  0000 C CNN
+	1    8950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R39
+U 1 1 5279A3E8
+P 8950 3550
+F 0 "R39" V 9030 3550 40  0000 C CNN
+F 1 "330" V 8957 3551 40  0000 C CNN
+F 2 "~" V 8880 3550 30  0000 C CNN
+F 3 "~" H 8950 3550 30  0000 C CNN
+	1    8950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3700 5150 3950
+Connection ~ 5150 3850
+Wire Wire Line
+	4200 3850 3400 3850
+Wire Wire Line
+	3000 3850 2900 3850
+Wire Wire Line
+	2900 4300 2900 4450
+Wire Wire Line
+	5150 4450 5150 4350
+Wire Wire Line
+	3550 4350 3550 4450
+Connection ~ 3550 4450
+Wire Wire Line
+	4050 4350 4050 4550
+Connection ~ 4050 4450
+Wire Wire Line
+	4600 4450 4600 4150
+Connection ~ 4600 4450
+Connection ~ 2900 3850
+Wire Wire Line
+	2900 3650 2900 4100
+Wire Wire Line
+	3550 3650 3550 3950
+Connection ~ 3550 3850
+Wire Wire Line
+	2900 4450 5450 4450
+Wire Wire Line
+	5450 4450 5450 4400
+Connection ~ 5150 4450
+Wire Wire Line
+	5000 3850 5150 3850
+Wire Wire Line
+	4050 3950 4050 3850
+Connection ~ 4050 3850
+Wire Wire Line
+	3750 3650 3750 3750
+Wire Wire Line
+	3750 3750 3550 3750
+Connection ~ 3550 3750
+Wire Wire Line
+	6650 3800 7050 3800
+Wire Wire Line
+	7050 4200 6650 4200
+Wire Wire Line
+	7050 4000 6950 4000
+Wire Wire Line
+	6950 4000 6950 3800
+Connection ~ 6950 3800
+Wire Wire Line
+	6650 4200 6650 4350
+Wire Wire Line
+	7750 3800 8000 3800
+Wire Wire Line
+	8000 3650 8000 3850
+Wire Wire Line
+	8000 4250 8000 4350
+Connection ~ 8000 3800
 Wire Wire Line
 	6800 3650 6800 3800
 Connection ~ 6800 3800
+Wire Wire Line
+	8950 3300 8950 3250
+Wire Wire Line
+	8950 3800 8950 3850
+Wire Wire Line
+	8950 4250 8950 4350
 $EndSCHEMATC
