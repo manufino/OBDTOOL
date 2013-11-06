@@ -1,4 +1,4 @@
-update=06/11/2013 01:41:53
+update=06/11/2013 02:22:01
 version=1
 last_client=eeschema
 [cvpcb]
@@ -129,3 +129,5 @@ LibName72=transistors_gaui
 LibName73=ipc-7351-transistor
 LibName74=mylib/ftdichip
 LibName75=mylib/mm232r
+LibName76=ref-packages
+LibName77=ncp699
